@@ -1,0 +1,11 @@
+.messageContainer {
+  * {
+    margin-top: 0 !important;
+    margin-bottom: 1rem;
+    border: 1px solid black;
+    min-height: 1rem;
+  }
+  p {
+    min-height: 2rem;
+  }
+}

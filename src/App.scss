@@ -1,9 +1,10 @@
 .container {
+  margin-top: 100px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 10rem;
-  * {
-    width: 30vw;
+  gap: 3rem;
+  form,
+  .messageContainer {
+    width: 40vw;
   }
 }

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import "./Form.scss"
+import './Form.scss'
 
 type Props = {
   updateMessage: (header: string, body: string) => void;

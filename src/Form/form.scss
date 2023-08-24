@@ -1,7 +1,9 @@
 form {
   display: flex;
   flex-direction: column;
+  gap: 1rem;
   button {
-    width: initial !important;
+    max-width: fit-content;
+    align-self: right;
   }
 }
