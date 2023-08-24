@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import './App.css'
+import './App.scss'
 import Form from './Form/Form'
 import Message from './Message/Message'
 
@@ -15,7 +15,7 @@ function App() {
 
   return (
     <div className='container'>
-      <Form header={header} body={body} updateMessage={uppdateMessage} />
+      <Form updateMessage={uppdateMessage} />
       <Message header={header} body={body} />
     </div>
   )

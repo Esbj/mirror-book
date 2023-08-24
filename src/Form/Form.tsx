@@ -1,16 +1,16 @@
 import React, { useState } from 'react'
+import "./Form.scss"
+
 type Props = {
-  header: string;
-  body: string;
   updateMessage: (header: string, body: string) => void;
 }
-const Form: React.FC<Props> = () => {
+const Form: React.FC<Props> = ({ updateMessage }) => {
 
-  const [localHeader, setLocalHeader] = useState("")
-  const [localBody, setLocalBody] = useState("")
+  const [header, setLocalHeader] = useState("")
+  const [body, setLocalBody] = useState("")
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-
+    updateMessage(header, body)
   }
   return (
     <form onSubmit={handleSubmit}>
